@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build: .
+    # command: python
+    tty: true
+    volumes: 
+      - .:/app
+    restart: always
+    environment: 
+      IEX_API_KEY: pk_17e10e3bf27b43ea81aaabc7eef5b3fe
